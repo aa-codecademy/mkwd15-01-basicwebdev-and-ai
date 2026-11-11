@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="5" cellpadding="7">
+        <caption>Code Academy Timetable</caption>
+        <thead>
+            <tr bgcolor="lightblue">
+                <th>Groups</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- We are using th just for demo - because in this case our first column is kind of a header as well -->
+                <th bgcolor="lightblue"><b>G1</b></th>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <!-- When we have colspan we don't need to add two td elements - we are merging two into one -->
+                <td bgcolor="lightgreen" colspan="2"></td>
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G2</b></td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen" colspan="3"></td>
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G3</b></td>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <!-- When we have colspan we don't need to add two td elements - we are merging two into one -->
+                <td bgcolor="lightgreen" colspan="2"></td>
+            </tr>
+            <tr>
+                <td bgcolor="lightblue"><b>G4</b></td>
+                <td rowspan="3">HTML&CSS</td>
+                <td rowspan="3" bgcolor="lightgreen"></td>
+                <td rowspan="3">HTML&CSS</td>
+                <td rowspan="3" bgcolor="lightgreen"></td>
+                <td rowspan="3">HTML&CSS</td>
+                <!-- When we have colspan and rowspan we don't need to add two td elements - we are merging two into one -->
+                <td rowspan="3" colspan="2" bgcolor="lightgreen"></td>
+            </tr>
+            <tr>
+                <!-- we don't need the other td elements here, because we already have them with the rowspan from the previous row (tr) -->
+                <td bgcolor="lightblue"><b>G5</b></td>
+                <!-- <td bgcolor="lightblue"><b>G5</b></td> This is extra we don't need it-->
+            </tr>
+            <tr>
+                <td bgcolor="lightblue">
+                    <b>G6</b>
+                </td>
+            </tr>
+                       <tr>
+                <td bgcolor="lightblue"><b>G7</b></td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen"></td>
+                <td>HTML&CSS</td>
+                <td bgcolor="lightgreen" colspan="3"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" cellspacing="5" cellpadding="5">
+        <caption>Calendar</caption>
+        <colgroup>
+            <col bgcolor="aqua">
+            <col bgcolor="lightgrey">
+            <col bgcolor="lightgreen">
+            <col bgcolor="lightpink">
+        </colgroup>
+        <thead>
+            <th></th>
+            <th>9am</th>
+            <th>10am</th>
+            <th>11am</th>
+            <th>12am</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <!-- 9am and 10am-->
+                <td colspan="2">Math</td>
+                <!-- 11am -->
+                <td rowspan="2">Art</td>
+                <!-- 12am -->
+                <td bgcolor="red">Geography</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <!-- 9am -->
+                <td>Math</td>
+                <!-- 10am -->
+                <td>Gym</td>
+                <!-- 11am - Arts from previous row -->
+                <td rowspan="2">Biology</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <!-- 9am, 10am and 11am -->
+                <td colspan="3">Gym</td>
+                <!-- 12am - Biology from previous row -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
