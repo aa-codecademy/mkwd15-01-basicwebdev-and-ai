@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Text inputs</legend>
+            <h3>Text input</h3>
+            <label for="user_name">Username</label>
+            <input type="text" name="username" id="user_name" required placeholder="Enter a username" />
+
+            <h3>Password input</h3>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+
+            <h3>Number input</h3>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" />
+
+            <h3>Text area</h3>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" cols="15" rows="5"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Making choices</legend>
+            <h3>Radio button</h3>
+            <h4>Genre</h4>
+            <!-- we use the name to "group" the radio buttons (options) together, because these three radio buttons are used to choose a genre. What we will need to send to BE is genre: the value that was chosen -->
+            <input type="radio" name="genre" id="rock" value="rock" checked />
+            <label for="rock">Rock</label>
+
+            <input type="radio" name="genre" id="pop" value="pop" />
+            <label for="pop">Pop</label>
+
+            <input type="radio" name="genre" id="jazz" value="jazz" />
+            <label for="jazz">Jazz</label>
+
+            <h4>Band</h4>
+            <input type="radio" name="band" id="gnr" value="gnr" />
+            <label for="gnr">GnR</label>
+
+            <input type="radio" name="band" id="acdc" value="acdc" />
+            <label for="acdc">ACDC</label>
+
+            <h4>Checkbox</h4>
+            <input type="checkbox" name="service" value="spotify" id="spotify" />
+            <label for="spotify">Spotify</label>
+
+            <input type="checkbox" name="service" value="appleMusic" id="apple" />
+            <label for="apple">Apple music</label>
+
+            <input type="checkbox" name="service" value="googleMusic" id="google" />
+            <label for="google">Google music</label>
+
+            <h3>Dropdown select</h3>
+            <label for="instrument">What instrument do you play?</label>
+            <select name="instrument" id="instrument" required>
+                <!-- We add an empty value so that if the field is required the user will have to choose from one of the options - the Please select is not a real option, but a placeholder -->
+                <option value="">Please select</option>
+                <option value="guitar">Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="bass">Bass</option>
+            </select>
+
+            <h3>Dropdown select - multiple</h3>
+            <label for="instruments">What instruments do you play?</label>
+            <select name="instruments" id="instruments" multiple size="3">
+                <option value="guitar">Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="bass">Bass</option>
+            </select>
+        </fieldset>
+        <h3>File input</h3>
+        <label for="song">Upload your favourite song</label>
+        <input type="file" name="song" id="song" />
+
+        <h3>Submit and reset inputs</h3>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        <h3>Submit and reset buttons</h3>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <input type="hidden" name="user_id" value="1234">
+    </form>
+<br>
+    <form action="" method="post">
+        <fieldset>
+            <legend>HTML 5 specific elements</legend>
+
+            <h3>Email</h3>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email:">
+
+            <h3>Date</h3>
+            <label for="bday">Birthday:</label>
+            <input type="date" id="bday" name="bday">
+
+            <h3>Date-time</h3>
+            <label for="appointment">Appointment:</label>
+            <input type="datetime-local" id="appointment" name="appointment">
+
+            <h3>Color</h3>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color">
+
+            <h3>Range</h3>
+            <label for="points">Range</label>
+            <input type="range" id="points" name="points" min="0" max="100">
+        </fieldset>
+    </form>
+</body>
+
+</html>
