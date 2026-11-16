@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Selectors and Colors</title>
+
+    <!-- Connect the external CSS file -->
+    <link rel="stylesheet" href="style/chatGptStyle.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Selectors and Colors</h1>
+        <p>Learning how to style HTML elements using CSS</p>
+    </header>
+
+    <main>
+
+        <!-- ================================== -->
+        <!-- 1. ELEMENT SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>1. Element Selector</h2>
+
+            <p>
+                This is a paragraph. All paragraph elements
+                will receive the same basic styling.
+            </p>
+
+            <p>
+                This is another paragraph with the same styling.
+            </p>
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 2. CLASS SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>2. Class Selector</h2>
+
+            <p class="highlight">
+                This paragraph has the highlight class.
+            </p>
+
+            <p class="highlight">
+                This paragraph has the same class.
+            </p>
+
+            <p>
+                This paragraph does not have that class.
+            </p>
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 3. ID SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>3. ID Selector</h2>
+
+            <p id="special-message">
+                This paragraph has a unique ID.
+            </p>
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 4. GROUPING SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>4. Grouping Selector</h2>
+
+            <h3 class="group-example">Heading 3</h3>
+
+            <h4 class="group-example">Heading 4</h4>
+
+            <p class="group-example">Paragraph</p>
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 5. DESCENDANT SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>5. Descendant Selector</h2>
+
+            <div class="parent">
+                <p>This paragraph is inside the parent div.</p>
+
+                <div>
+                    <p>
+                        This paragraph is inside a nested div.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 6. CHILD SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>6. Child Selector</h2>
+
+            <div class="child-example">
+
+                <p>This is a direct child of the div.</p>
+
+                <div>
+                    <p>
+                        This paragraph is NOT a direct child
+                        of the outer div.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 7. ADJACENT SIBLING SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>7. Adjacent Sibling Selector</h2>
+
+            <h3 class="adjacent-title">My Heading</h3>
+
+            <p>
+                This paragraph comes immediately after the heading.
+            </p>
+
+            <p>
+                This paragraph does not come immediately after
+                the heading.
+            </p>
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 8. GENERAL SIBLING SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>8. General Sibling Selector</h2>
+
+            <h3 class="general-title">My Heading</h3>
+
+            <p>This is the first paragraph after the heading.</p>
+
+            <div>This is a div element.</div>
+
+            <p>This is another paragraph after the heading.</p>
+
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 9. ATTRIBUTE SELECTOR -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>9. Attribute Selector</h2>
+
+            <a href="https://example.com" target="_blank">
+                Open Example Website
+            </a>
+
+            <br><br>
+
+            <input type="text" placeholder="Text input">
+
+            <input type="email" placeholder="Email input">
+
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 10. PSEUDO-CLASSES -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>10. Pseudo-Classes</h2>
+
+            <button class="demo-button">
+                Hover over me!
+            </button>
+
+            <br><br>
+
+            <input type="text" class="focus-input"
+                   placeholder="Click here to see focus">
+
+            <p>
+                Try hovering over the button or clicking the input.
+            </p>
+
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 11. STRUCTURAL PSEUDO-CLASSES -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>11. Structural Pseudo-Classes</h2>
+
+            <ul class="fruit-list">
+                <li>Apple - First child</li>
+                <li>Banana - Second child</li>
+                <li>Orange - Third child</li>
+                <li>Grapes - Last child</li>
+            </ul>
+
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 12. CSS COLORS -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>12. CSS Color Formats</h2>
+
+            <p>Different ways to define colors in CSS:</p>
+
+            <div class="color-container">
+
+                <div class="color-box color-name">
+                    <h3>Color Name</h3>
+                    <p>tomato</p>
+                </div>
+
+                <div class="color-box color-hex">
+                    <h3>HEX</h3>
+                    <p>#4682B4</p>
+                </div>
+
+                <div class="color-box color-short-hex">
+                    <h3>Short HEX</h3>
+                    <p>#6A8</p>
+                </div>
+
+                <div class="color-box color-rgb">
+                    <h3>RGB</h3>
+                    <p>rgb(70, 130, 180)</p>
+                </div>
+
+                <div class="color-box color-rgba">
+                    <h3>RGBA</h3>
+                    <p>rgba(70, 130, 180, 0.5)</p>
+                </div>
+
+                <div class="color-box color-hsl">
+                    <h3>HSL</h3>
+                    <p>hsl(200, 60%, 55%)</p>
+                </div>
+
+                <div class="color-box color-hsla">
+                    <h3>HSLA</h3>
+                    <p>hsla(200, 60%, 55%, 0.5)</p>
+                </div>
+
+            </div>
+
+            <!-- Transparency example -->
+            <h3>Transparency Example</h3>
+
+            <div class="transparency-container">
+                <div class="transparent-box">
+                    50% transparent background
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================================== -->
+        <!-- 13. COMBINING SELECTORS -->
+        <!-- ================================== -->
+
+        <section>
+            <h2>13. Combining Selectors</h2>
+
+            <div class="combination-example">
+
+                <p class="important">
+                    This paragraph has both a class and a parent.
+                </p>
+
+                <p>
+                    This is a normal paragraph.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Keep practicing CSS!</p>
+    </footer>
+
+</body>
+</html>

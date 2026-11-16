@@ -1,0 +1,29 @@
+/* class selector */
+.fantasyList{
+    background-color: lightgrey;
+}
+
+/* id selector */
+#harryPotter{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.actionList{
+    background-color:rgb(94, 94, 214);
+    /* background-color: brown; */
+}
+
+h3{
+    color:#468746;
+}
+
+.fantasyMovie{
+    color:rgb(55, 176, 164);
+    font-style: italic;
+}
+
+.actionMovie{
+    color: orange;
+    font-style: italic;
+}

@@ -1,0 +1,342 @@
+
+/* ========================================= */
+/* 1. ELEMENT SELECTOR                       */
+/* ========================================= */
+
+/* Selects ALL elements with the specified tag */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+p {
+    color: #555555;
+    line-height: 1.5;
+}
+
+
+/* ========================================= */
+/* 2. GROUPING SELECTOR                      */
+/* ========================================= */
+
+/* Applies the same styling to multiple selectors */
+
+h1, h2 {
+    color: #243b53;
+}
+
+
+/* ========================================= */
+/* 3. CLASS SELECTOR                         */
+/* ========================================= */
+
+/* The dot (.) selects elements by class */
+
+.highlight {
+    background-color: #fff0c2;
+    color: #805500;
+    padding: 10px;
+    border-left: 4px solid orange;
+}
+
+
+/* ========================================= */
+/* 4. ID SELECTOR                            */
+/* ========================================= */
+
+/* The # selects an element by its ID */
+
+#special-message {
+    background-color: #3867a6;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+
+/* ========================================= */
+/* 5. GROUPING SELECTOR                      */
+/* ========================================= */
+
+.group-example {
+    color: #8e44ad;
+}
+
+
+/* ========================================= */
+/* 6. DESCENDANT SELECTOR                    */
+/* ========================================= */
+
+/* Space means ANY matching descendant */
+
+.parent p {
+    background-color: #e8f4ff;
+    padding: 10px;
+}
+
+
+/* ========================================= */
+/* 7. CHILD SELECTOR                         */
+/* ========================================= */
+
+/* > selects ONLY direct children */
+
+.child-example > p {
+    background-color: #e0f2e9;
+    color: #176b45;
+    padding: 10px;
+    border-left: 4px solid #2a9d8f;
+}
+
+
+/* ========================================= */
+/* 8. ADJACENT SIBLING SELECTOR              */
+/* ========================================= */
+
+/* + selects the IMMEDIATELY following sibling */
+
+.adjacent-title + p {
+    color: #c03970;
+    font-weight: bold;
+    background-color: #fceaf3;
+    padding: 10px;
+}
+
+
+/* ========================================= */
+/* 9. GENERAL SIBLING SELECTOR               */
+/* ========================================= */
+
+/* ~ selects ALL matching siblings that come AFTER */
+
+.general-title ~ p {
+    color: #6b4e9b;
+    background-color: #f0eafa;
+    padding: 10px;
+}
+
+
+/* ========================================= */
+/* 10. ATTRIBUTE SELECTOR                    */
+/* ========================================= */
+
+/* Selects elements based on their attributes */
+
+a[target="_blank"] {
+    color: #087f8c;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    border: 2px solid #087f8c;
+}
+
+
+/* ========================================= */
+/* 11. PSEUDO-CLASSES                        */
+/* ========================================= */
+
+/* :hover - when the mouse is over an element */
+
+.demo-button {
+    background-color: #3867a6;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.demo-button:hover {
+    background-color: #243b53;
+}
+
+/* :active - while an element is being clicked */
+
+.demo-button:active {
+    background-color: #16283d;
+}
+
+/* :focus - when an input is selected/focused */
+
+.focus-input:focus {
+    outline: 3px solid rgba(56, 103, 166, 0.3);
+    border: 2px solid #3867a6;
+}
+
+
+/* ========================================= */
+/* 12. STRUCTURAL PSEUDO-CLASSES             */
+/* ========================================= */
+
+/* Select the first child */
+
+.fruit-list li:first-child {
+    color: green;
+    font-weight: bold;
+}
+
+/* Select the second child */
+
+.fruit-list li:nth-child(2) {
+    color: orange;
+}
+
+/* Select the third child */
+
+.fruit-list li:nth-child(3) {
+    color: red;
+}
+
+/* Select the last child */
+
+.fruit-list li:last-child {
+    color: purple;
+    font-weight: bold;
+}
+
+
+/* ========================================= */
+/* 13. CSS COLOR FORMATS                     */
+/* ========================================= */
+
+/* Color name */
+
+.color-name {
+    background-color: tomato;
+}
+
+/* HEX - hexadecimal color */
+
+.color-hex {
+    background-color: #4682B4;
+}
+
+/* Short HEX - shorthand hexadecimal */
+
+.color-short-hex {
+    background-color: #6A8;
+}
+
+/* RGB - Red, Green, Blue */
+
+.color-rgb {
+    background-color: rgb(70, 130, 180);
+}
+
+/* RGBA - RGB + Alpha (transparency) */
+
+.color-rgba {
+    background-color: rgba(70, 130, 180, 0.5);
+}
+
+/* HSL - Hue, Saturation, Lightness */
+
+.color-hsl {
+    background-color: hsl(200, 60%, 55%);
+}
+
+/* HSLA - HSL + Alpha (transparency) */
+
+.color-hsla {
+    background-color: hsla(200, 60%, 55%, 0.5);
+}
+
+
+/* ========================================= */
+/* COLOR EXAMPLES LAYOUT                     */
+/* ========================================= */
+
+.color-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.color-box {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.color-box p {
+    color: inherit;
+}
+
+
+/* ========================================= */
+/* 14. TRANSPARENCY EXAMPLE                  */
+/* ========================================= */
+
+.transparency-container {
+    background-color: #f1d7b8;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.transparent-box {
+    background-color: rgba(70, 130, 180, 0.5);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    color: #183044;
+}
+
+
+/* ========================================= */
+/* 15. COMBINING SELECTORS                   */
+/* ========================================= */
+
+/* Selects elements that have BOTH conditions:
+   They are paragraphs AND have the important class */
+
+p.important {
+    color: #c0392b;
+    font-weight: bold;
+    background-color: #fdecea;
+    padding: 10px;
+}
+
+
+/* ========================================= */
+/* GENERAL PAGE STYLING                      */
+/* ========================================= */
+
+header {
+    text-align: center;
+    background-color: #dce9f5;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+}
+
+section h2 {
+    border-bottom: 2px solid #dce9f5;
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    color: #777777;
+    padding: 20px;
+}
