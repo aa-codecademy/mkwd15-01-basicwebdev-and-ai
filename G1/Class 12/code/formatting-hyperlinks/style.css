@@ -1,0 +1,37 @@
+a:link{
+    color: lightcoral;
+}
+
+a:visited{
+    color: violet;
+}
+
+a:hover{
+    color:aqua;
+}
+
+a:active{
+    color: blue;
+}
+
+.navigation-menu{
+    list-style-type: none;
+}
+
+header{
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.search-button:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.search-button:focus{
+    border: 10px solid blue
+}
+
+.search-button:active{
+    background-color: orange;
+}
