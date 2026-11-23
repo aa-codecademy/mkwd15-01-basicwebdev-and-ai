@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.article {
+    width: 600px;
+    border: 2px solid lightgray;
+    padding: 15px;
+}
+
+/* Float the image to the left */
+img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
